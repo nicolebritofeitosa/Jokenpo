@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpô</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+<body>
+
+    <section class="scoreboard">
+        <div class="scores">
+            <div class="your-score">
+                <p> VOCÊ </p>
+                <p class="your-score-number"> 0 </p>
+            </div>
+            <img class="versus-image" src="./assets/vs-image.png">
+            <div class="machine-score">
+                <p> MÁQUINA </p>
+                <p class="machine-score-number"> 0 </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="choices">
+        <section class="choice-images"> 
+            <div class="your-choice">
+                <p> VOCÊ </p>
+                <img id="your-choice-image" src="./assets/pedra-img.webp">
+            </div>
+        </section>
+
+        <section class="rounds">
+            <p class="round-result"></p>
+        </section>
+
+        <section class="choice-images">
+            <div class="machine-choice">
+                <p> MÁQUINA </p>
+                <img id="machine-choice-image" src="./assets/pedra-img.webp">
+            </div>
+        </section>
+
+    </section>
+
+    <main>
+        <div class="buttons">
+            <button class="stone-button" onclick="humanMove('stone')"> <b>Pedra</b> <img src="./assets/pedra-img.webp"> </button>
+            <button class="paper-button" onclick="humanMove('paper')"> <b>Papel</b> <img src="./assets/papel-image.png"> </button>
+            <button class="scissors-button" onclick="humanMove('scissors')"> <b>Tesoura</b> <img src="./assets/tesoura-image.png"> </button>
+        </div>
+    </main>
+</body>
+<script src="./script.js"></script>
+</html>
