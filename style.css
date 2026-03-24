@@ -169,8 +169,7 @@ button:active{
     padding: 20px;
     border-radius: 20px;
     gap: 10px;
-    width: 100%;
-    min-width: 600px;
+    width: 600px;
     height: 200px;
 }
 
