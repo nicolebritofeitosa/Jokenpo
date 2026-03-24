@@ -4,6 +4,7 @@ const yourScore = document.querySelector(".your-score-number")
 const machineScore = document.querySelector(".machine-score-number")
 const yourChoiceImage = document.querySelector("#your-choice-image")
 const machineChoiceImage = document.querySelector("#machine-choice-image")
+const titulo = document.querySelector("h1")
 
 const resetClasses = () => {
     result.classList.remove("win", "lose", "draw")
@@ -16,6 +17,7 @@ let machineScoreNumber = 0
 const humanMove = (humanChoice) => {
     const machineChoice = machineMove()
 
+    animateTitle()
     roundStart(humanChoice, machineChoice)
     changeImage(humanChoice, machineChoice)
 }
@@ -67,3 +69,15 @@ const changeImage = (human, machine) => {
         machineChoiceImage.src = "./assets/tesoura-image.png"
     }
 }
+
+function animateTitle() {
+    titulo.textContent = "FIGHT!"
+
+    titulo.classList.remove("fight")
+    void titulo.offsetWidth
+    titulo.classList.add("fight")
+
+    setTimeout(() => {
+        titulo.textContent = "JOKENPÔ"
+    }, 600)
+}   
