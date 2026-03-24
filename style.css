@@ -23,7 +23,8 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
 }
 
 h1 {
@@ -43,7 +44,8 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
 }
 
 button img {
@@ -167,7 +169,8 @@ button:active{
     padding: 20px;
     border-radius: 20px;
     gap: 10px;
-    width: 600px;
+    width: 100%;
+    min-width: 600px;
     height: 200px;
 }
 
@@ -306,5 +309,9 @@ button:active{
 
     .image-button {
         width: 40px;
+    }
+
+    body {
+        padding: 10px;
     }
 }
