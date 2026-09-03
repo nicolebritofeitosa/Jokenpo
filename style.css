@@ -71,6 +71,7 @@ button {
     border: none;
     border-radius: 20px;
     transition: opacity 0.15s ease-in-out;
+    cursor: pointer;
 }
 
 .stone-button {
